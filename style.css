@@ -1,0 +1,52 @@
+.achievements > li {
+	display: inline-block;
+	margin-right: 30px;
+}
+.achievement {
+	box-sizing: border-box;
+    position: relative;
+    width: 100px;
+    height: 100px;
+	background: #dedcdf;
+	border: 4px solid #7ca5ba;
+	border-radius: 50%;
+	text-align: center;
+	color: #7ca5ba;
+	vertical-align: middle;
+}
+.achievement img {
+	max-width: 80%;
+	max-height: 80%;
+	display: block;	
+  	position: absolute;
+  	margin: auto;
+  	top: 0; left: 0; bottom: 0; right: 0;	
+}
+.achievementNumber{
+	display: none;
+}
+.achievementWithNumber .achievementNumber {
+	display: block;
+	position: absolute;
+	right: 10px;
+	bottom: 3px;
+	z-index: 1;
+	font: bold 14pt "Arial Black";
+}
+.achievementWithNumber:after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: -5px;
+	bottom: -5px;
+	border-bottom: 4px solid;
+	border-right: 4px solid;
+	border-radius: 80% 45% 80% 50% / 80% 50% 80% 45%;
+	border-color: inherit;
+	background: inherit;
+}
+.achievementRed {
+	border-color: #a08da3;
+	color: #a08da3;
+}
